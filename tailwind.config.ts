@@ -65,10 +65,15 @@ export default {
 				},
 				navy: '#1A1F2C',
 				purple: {
-					light: '#E5DEFF',
-					DEFAULT: '#8B5CF6',
-					dark: '#6E59A5',
+					light: '#E1F2FE',
+					DEFAULT: '#0EA5E9',
+					dark: '#0284C7',
 				},
+				blue: {
+					light: '#E1F2FE', 
+					DEFAULT: '#0EA5E9',
+					dark: '#0284C7',
+				}
 			},
 			fontFamily: {
 				inter: ['Inter', 'sans-serif'],

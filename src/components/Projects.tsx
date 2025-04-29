@@ -78,42 +78,6 @@ const Projects = () => {
               "Achieved 87% user satisfaction rate in recommendation quality"
             ]}
           />
-          
-          <ProjectCard 
-            title="Personal Finance Tracker"
-            timeline="Jul 2024"
-            description="Designed and developed a web application to help users track and manage personal finances."
-            points={[
-              "Built using HTML, CSS, JavaScript, and local storage for data persistence",
-              "Implemented data visualization with Chart.js",
-              "Created intuitive UI for expense categorization",
-              "Added budget planning and goal tracking features"
-            ]}
-          />
-          
-          <ProjectCard 
-            title="Sentiment Analysis Tool"
-            timeline="May 2024"
-            description="Created an NLP-based tool to analyze sentiment in customer feedback and reviews."
-            points={[
-              "Used Python with NLTK and spaCy libraries",
-              "Implemented both rule-based and machine learning approaches",
-              "Achieved 82% accuracy in sentiment classification",
-              "Developed a simple API interface for integration with other systems"
-            ]}
-          />
-          
-          <ProjectCard 
-            title="Weather Data Visualization Dashboard"
-            timeline="Mar 2024"
-            description="Developed an interactive dashboard to visualize historical weather data and patterns."
-            points={[
-              "Built using Python's Dash framework",
-              "Integrated with weather APIs for real-time data",
-              "Implemented interactive maps and time-series graphs",
-              "Added forecasting features using statistical models"
-            ]}
-          />
         </div>
       </div>
     </section>
