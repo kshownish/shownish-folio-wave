@@ -1,6 +1,5 @@
 
-import { Button } from "./ui/button";
-import { ArrowRight, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 interface ProjectProps {
   title: string;
@@ -28,7 +27,7 @@ const ProjectCard = ({ title, description, timeline, points, githubLink }: Proje
           </li>
         ))}
       </ul>
-      <div className="pt-2 flex space-x-3">
+      <div className="pt-2">
         {githubLink && (
           <a 
             href={githubLink} 
@@ -39,9 +38,6 @@ const ProjectCard = ({ title, description, timeline, points, githubLink }: Proje
             View on GitHub <ExternalLink size={14} className="ml-1" />
           </a>
         )}
-        <Button variant="outline" size="sm" className="text-sm">
-          View Project <ArrowRight size={14} className="ml-1" />
-        </Button>
       </div>
     </div>
   );
@@ -90,7 +86,7 @@ const Projects = () => {
               "Used TF-IDF vectorization for movie descriptions analysis",
               "Achieved 87% user satisfaction rate in recommendation quality"
             ]}
-            githubLink="https://github.com/kshownish/movie-recommendation-system"
+            githubLink="https://github.com/kshownish/Cinephiles-Choice"
           />
         </div>
       </div>

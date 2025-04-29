@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
           <div className="flex items-center gap-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <a 
-              href="https://www.linkedin.com/" 
+              href="https://www.linkedin.com/in/kshownish-parachikapu-bb1b16214/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center text-gray-700 hover:text-purple transition-colors"
@@ -39,7 +39,7 @@ const Hero = () => {
               <span>LinkedIn</span>
             </a>
             <a 
-              href="https://github.com/" 
+              href="https://github.com/kshownish" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center text-gray-700 hover:text-purple transition-colors"
@@ -48,7 +48,7 @@ const Hero = () => {
               <span>GitHub</span>
             </a>
             <a 
-              href="https://leetcode.com/" 
+              href="https://leetcode.com/u/Kshownish/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center text-gray-700 hover:text-purple transition-colors"

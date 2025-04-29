@@ -17,7 +17,7 @@ const Footer = () => {
           
           <div className="flex space-x-6">
             <a 
-              href="https://www.linkedin.com/" 
+              href="https://www.linkedin.com/in/kshownish-parachikapu-bb1b16214/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-purple transition-colors"
@@ -26,7 +26,7 @@ const Footer = () => {
               <Linkedin size={24} />
             </a>
             <a 
-              href="https://github.com/" 
+              href="https://github.com/kshownish" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-purple transition-colors"
@@ -35,7 +35,7 @@ const Footer = () => {
               <Github size={24} />
             </a>
             <a 
-              href="https://leetcode.com/" 
+              href="https://leetcode.com/u/Kshownish/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-purple transition-colors"
