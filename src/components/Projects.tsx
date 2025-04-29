@@ -1,15 +1,16 @@
 
 import { Button } from "./ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 
 interface ProjectProps {
   title: string;
   description: string;
   timeline: string;
   points: string[];
+  githubLink?: string;
 }
 
-const ProjectCard = ({ title, description, timeline, points }: ProjectProps) => {
+const ProjectCard = ({ title, description, timeline, points, githubLink }: ProjectProps) => {
   return (
     <div className="project-card">
       <div className="flex justify-between items-start mb-3">
@@ -27,7 +28,17 @@ const ProjectCard = ({ title, description, timeline, points }: ProjectProps) => 
           </li>
         ))}
       </ul>
-      <div className="pt-2">
+      <div className="pt-2 flex space-x-3">
+        {githubLink && (
+          <a 
+            href={githubLink} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 text-sm rounded-md border px-3 h-9 border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
+          >
+            View on GitHub <ExternalLink size={14} className="ml-1" />
+          </a>
+        )}
         <Button variant="outline" size="sm" className="text-sm">
           View Project <ArrowRight size={14} className="ml-1" />
         </Button>
@@ -53,6 +64,7 @@ const Projects = () => {
               "Identified 4 distinct customer segments with unique behaviors",
               "Created visualizations and dashboards to communicate findings"
             ]}
+            githubLink="https://github.com/kshownish/customer-segmentation"
           />
           
           <ProjectCard 
@@ -65,6 +77,7 @@ const Projects = () => {
               "Developed recommendation models for related products",
               "Improved conversion rates by 15% through data-driven insights"
             ]}
+            githubLink="https://github.com/kshownish/Ecommerce_sales_Analysis"
           />
           
           <ProjectCard 
@@ -77,6 +90,7 @@ const Projects = () => {
               "Used TF-IDF vectorization for movie descriptions analysis",
               "Achieved 87% user satisfaction rate in recommendation quality"
             ]}
+            githubLink="https://github.com/kshownish/movie-recommendation-system"
           />
         </div>
       </div>
