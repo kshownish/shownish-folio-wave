@@ -19,7 +19,7 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Simple validation
@@ -32,22 +32,26 @@ const Contact = () => {
       return;
     }
     
-    // Here you would typically send the form data to a server
-    console.log("Form submitted:", formData);
-    
-    // Show success message
-    toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: ""
-    });
+    try {
+      // Create mailto URL
+      const mailtoUrl = `mailto:kshownishparachikapu@gmail.com?subject=${encodeURIComponent(formData.subject || 'Contact from Portfolio')}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`;
+      
+      // Open email client
+      window.location.href = mailtoUrl;
+      
+      // Show success message
+      toast({
+        title: "Email Client Opened",
+        description: "Please send the email from your mail client.",
+      });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was an error sending your message. Please try again.",
+        variant: "destructive"
+      });
+      console.error("Error sending email:", error);
+    }
   };
   
   return (
@@ -108,7 +112,7 @@ const Contact = () => {
             
             <div className="pt-4">
               <Button className="w-full" asChild>
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1spVF22pZU6gxxyLArb5lrgxb7phkINJY/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                   Download Resume
                 </a>
               </Button>
