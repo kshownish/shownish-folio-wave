@@ -6,13 +6,21 @@ interface CertificationProps {
   provider: string;
   date: string;
   skills: string[];
+  link: string;
 }
 
-const CertificationCard = ({ title, provider, date, skills }: CertificationProps) => {
+const CertificationCard = ({ title, provider, date, skills, link }: CertificationProps) => {
   return (
     <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 transition-all hover:shadow-lg">
       <div className="flex justify-between items-start mb-2">
-        <h3 className="text-xl font-semibold text-navy">{title}</h3>
+        <a 
+          href={link} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-xl font-semibold text-navy hover:text-blue-600 transition-colors"
+        >
+          {title}
+        </a>
         <span className="text-sm text-gray-500">{date}</span>
       </div>
       <p className="text-gray-600 mb-4">{provider}</p>
@@ -39,34 +47,39 @@ const Certifications = () => {
             provider="Stanford Online"
             date="Feb 2025"
             skills={["Machine Learning", "Python", "Data Analysis", "Neural Networks"]}
+            link="https://coursera.org/share/593df17ab75055ed6692f3dca1ca31ab"
           />
           
           <CertificationCard 
-            title="Data Analyst Certification"
+            title="Introduction to Data Analytics"
             provider="META"
             date="Dec 2024"
             skills={["Data Analysis", "SQL", "Tableau", "Statistical Methods"]}
+            link="https://www.coursera.org/account/accomplishments/verify/X2L482Z41J3N?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+          />
+          
+          <CertificationCard 
+            title="Data Analysis with Spreadsheets and SQL"
+            provider="IBM"
+            date="Nov 2024"
+            skills={["SQL", "Spreadsheets", "Data Analysis", "Databases"]}
+            link="https://coursera.org/share/077e88ff5f2eceaae364d88104bb9f1c"
           />
           
           <CertificationCard 
             title="IBM DevOps and Software Engineering"
             provider="IBM"
-            date="Nov 2024"
-            skills={["DevOps", "CI/CD", "Docker", "Git"]}
-          />
-          
-          <CertificationCard 
-            title="AI Programming with Python"
-            provider="Udacity"
             date="Oct 2024"
-            skills={["Python", "AI", "NumPy", "PyTorch"]}
+            skills={["DevOps", "CI/CD", "Docker", "Git"]}
+            link="https://coursera.org/share/27d529ec80067faf045137442c38b736"
           />
           
           <CertificationCard 
-            title="Advanced SQL for Data Scientists"
-            provider="DataCamp"
+            title="Introduction to GenAI"
+            provider="DeepLearning.AI"
             date="Sep 2024"
-            skills={["SQL", "Database Design", "Query Optimization", "Data Modeling"]}
+            skills={["AI", "Generative AI", "LLMs", "Machine Learning"]}
+            link="https://coursera.org/share/fa3026fc12eec0f9f6819822f19c538a"
           />
           
           <CertificationCard 
@@ -74,6 +87,7 @@ const Certifications = () => {
             provider="Udemy"
             date="Aug 2024"
             skills={["HTML", "CSS", "JavaScript", "Responsive Design"]}
+            link="#"
           />
         </div>
       </div>
