@@ -22,10 +22,22 @@ const About = () => {
             
             <div className="mb-8">
               <h3 className="text-lg font-semibold text-navy mb-2">Education</h3>
-              <div className="pl-4 border-l-2 border-purple">
-                <p className="font-medium">B.Tech in Computer Science and Engineering</p>
-                <p className="text-gray-600">Lovely Professional University</p>
-                <p className="text-gray-500 text-sm">2023 - 2027 (Expected)</p>
+              <div className="space-y-4">
+                <div className="pl-4 border-l-2 border-purple">
+                  <p className="font-medium">Lovely Professional University, Jalandhar, Punjab</p>
+                  <p className="text-gray-600">Bachelor of Technology - Computer Science and Engineering</p>
+                  <p className="text-gray-500 text-sm">CGPA: 8.26 | Aug 2022 – Jun 2026</p>
+                </div>
+                <div className="pl-4 border-l-2 border-purple">
+                  <p className="font-medium">Telangana Social Welfare Residential College, Warangal, Telangana</p>
+                  <p className="text-gray-600">Intermediate</p>
+                  <p className="text-gray-500 text-sm">Percentage: 98% | Jun 2020 - May 2022</p>
+                </div>
+                <div className="pl-4 border-l-2 border-purple">
+                  <p className="font-medium">ST. Mary's High School, Warangal, Telangana</p>
+                  <p className="text-gray-600">Matriculation</p>
+                  <p className="text-gray-500 text-sm">CGPA: 10 | Apr 2019 - May 2020</p>
+                </div>
               </div>
             </div>
             

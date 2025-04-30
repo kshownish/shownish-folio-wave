@@ -12,7 +12,7 @@ const Hero = () => {
             Parachikapu Kshownish
           </h1>
           <h3 className="text-xl md:text-2xl font-medium text-gray-700 mb-6 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            Computer Science Undergraduate & AI Trainer
+            Computer Science Undergraduate
           </h3>
           <p className="text-gray-600 max-w-2xl mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Passionate about Data Science, Artificial Intelligence, and Web Technologies. Currently pursuing Computer Science and Engineering at Lovely Professional University, with a focus on building innovative solutions using modern technologies.
